@@ -1,0 +1,7 @@
+1681817428532	Delete resource 'atom-processorConfigs/src/main/synapse-config/api/HelloWorld.xml'
+1681818462319	Delete resource 'atom-processorCompositeExporter'
+1681818472595	Delete resource 'atom-processor/atom-processorCompositeExporter'
+1681824660146	Delete resource 'atom-processorConfigs/src/main/synapse-config/endpoints/Choreo_Token_Endpoint.xml'
+1681824705494	Delete resource 'atom-processorConfigs/src/main/synapse-config/endpoints/Choreo_Token_Endpoint_1.xml'
+1681824864400	Delete resource 'atom-processorConfigs/src/main/synapse-config/sequences/Choreo_Atom-_GetAccessToken_Sequenc.xml'
+1681824929795	Delete resource 'atom-processorConfigs/src/main/synapse-config/sequences/process-atom.xml'

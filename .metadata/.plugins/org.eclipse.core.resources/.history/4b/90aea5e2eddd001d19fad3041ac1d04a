@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="process-atom" groupId="wso2.sampleHelloWorld.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/process-atom.xml</file>
+    </artifact>
+    <artifact name="AMAZON_SQS_CONNECTION_1" groupId="wso2.sampleHelloWorld.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>/src/main/synapse-config/local-entries/AMAZON_SQS_CONNECTION_1.xml</file>
+    </artifact>
+    <artifact name="atom-polling-schedule" groupId="wso2.sampleHelloWorld.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/tasks/atom-polling-schedule.xml</file>
+    </artifact>
+    <artifact name="Choreo_Token_Endpoint" groupId="wso2.sampleHelloWorld.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/Choreo_Token_Endpoint.xml</file>
+    </artifact>
+    <artifact name="Choreo_Atom_GetAccessToken_Sequenc" groupId="wso2.sampleHelloWorld.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Choreo_Atom_GetAccessToken_Sequenc.xml</file>
+    </artifact>
+    <artifact name="Atom_Process_Sequence" groupId="wso2.sampleHelloWorld.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Atom_Process_Sequence.xml</file>
+    </artifact>
+</artifacts>

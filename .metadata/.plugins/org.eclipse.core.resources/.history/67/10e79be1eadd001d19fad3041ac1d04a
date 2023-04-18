@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="process-atom" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log/>
+    <sequence key="Choreo_Atom-_GetAccessToken_Sequenc"/>
+    <call>
+        <endpoint>
+            <http method="get" uri-template="https://5ea3cd2c-5708-4489-bfc3-d82bd90520b2-dev.e1-us-east-azure.choreoapis.dev/rxrp/atom-api/endpoint-9090-803/1.0.0/empUpdate">
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>-1</progressionFactor>
+                    <maximumDuration>0</maximumDuration>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </http>
+        </endpoint>
+    </call>
+    <log level="full"/>
+    <amazonsqs.sendMessage configKey="AMAZON_SQS_CONNECTION_1">
+        <queueId>494315182757</queueId>
+        <queueName>ChoreoTestSQS</queueName>
+        <messageBody>{$body}</messageBody>
+    </amazonsqs.sendMessage>
+</sequence>

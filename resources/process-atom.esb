@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esb:EsbDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb">
+  <server type="SEQUENCE">
+    <children xsi:type="esb:Sequences" name="process-atom">
+      <commentsList> &lt;amazonsqs.sendMessage configKey=&quot;AMAZON_SQS_CONNECTION_1&quot;>
+        &lt;queueId>494315182757&lt;/queueId>
+        &lt;queueName>ChoreoTestSQS&lt;/queueName>
+        &lt;messageBody>{$body}&lt;/messageBody>
+    &lt;/amazonsqs.sendMessage> </commentsList>
+      <outputConnector>
+        <outgoingLink target="//@server/@children.0/@mediatorFlow/@children.0/@inputConnector"/>
+      </outputConnector>
+      <inputConnector incomingLinks="//@server/@children.0/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+      <mediatorFlow>
+        <children xsi:type="esb:LogMediator" logSeparator=", ">
+          <inputConnector incomingLinks="//@server/@children.0/@outputConnector/@outgoingLink"/>
+          <outputConnector>
+            <outgoingLink target="//@server/@children.0/@mediatorFlow/@children.1/@inputConnector"/>
+          </outputConnector>
+        </children>
+        <children xsi:type="esb:Sequence" name="Choreo_Atom-_GetAccessToken_Sequenc">
+          <inputConnector incomingLinks="//@server/@children.0/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+          <outputConnector>
+            <outgoingLink target="//@server/@children.0/@mediatorFlow/@children.2/@inputConnector"/>
+          </outputConnector>
+          <dynamicReferenceKey prettyName="Sequence Expression" propertyName="expression" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+          <staticReferenceKey prettyName="Sequence Key" keyName="Sequence Key" keyValue="Choreo_Atom-_GetAccessToken_Sequenc" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000177040000000174001D6170706C69636174696F6E2F766E642E77736F322E73657175656E63657878"/>
+        </children>
+        <children xsi:type="esb:CallMediator">
+          <inputConnector incomingLinks="//@server/@children.0/@mediatorFlow/@children.1/@outputConnector.0/@outgoingLink"/>
+          <outputConnector>
+            <outgoingLink target="//@server/@children.0/@mediatorFlow/@children.3/@inputConnector"/>
+          </outputConnector>
+          <endpointOutputConnector>
+            <outgoingLink target="//@server/@children.0/@mediatorFlow/@children.2/@mediatorFlow/@children.0/@inputConnector"/>
+          </endpointOutputConnector>
+          <mediatorFlow>
+            <children xsi:type="esb:HTTPEndpoint" URITemplate="https://5ea3cd2c-5708-4489-bfc3-d82bd90520b2-dev.e1-us-east-azure.choreoapis.dev/rxrp/atom-api/endpoint-9090-803/1.0.0/empUpdate">
+              <reliableMessagingPolicy prettyName="ReliableMessagingPolicy Key" keyName="ReliableMessagingPolicy Key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+              <securityPolicy prettyName="SecurityPolicy Key" keyName="SecurityPolicy Key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+              <inboundPolicy prettyName="inboundPolicy Key" keyName="inboundPolicy Key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+              <outboundPolicy prettyName="obPolicy Key" keyName="obPolicy Key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+              <inputConnector incomingLinks="//@server/@children.0/@mediatorFlow/@children.2/@endpointOutputConnector/@outgoingLink"/>
+            </children>
+          </mediatorFlow>
+          <endpointRegistrykey prettyName="Endpoint Key" keyName="Endpoint Key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+          <sourceXPath prettyName="Endpoint XPath" propertyName="expression" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+        </children>
+        <children xsi:type="esb:LogMediator" logLevel="FULL" logSeparator=", ">
+          <inputConnector incomingLinks="//@server/@children.0/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+          <outputConnector>
+            <outgoingLink target="//@server/@children.0/@inputConnector"/>
+            <commentMediators commentText=" &lt;amazonsqs.sendMessage configKey=&quot;AMAZON_SQS_CONNECTION_1&quot;>&#xA;        &lt;queueId>494315182757&lt;/queueId>&#xA;        &lt;queueName>ChoreoTestSQS&lt;/queueName>&#xA;        &lt;messageBody>{$body}&lt;/messageBody>&#xA;    &lt;/amazonsqs.sendMessage> "/>
+          </outputConnector>
+        </children>
+      </mediatorFlow>
+      <onError prettyName="OnError sequence Key" keyName="OnError sequence Key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000007708000000100000000078"/>
+    </children>
+  </server>
+</esb:EsbDiagram>

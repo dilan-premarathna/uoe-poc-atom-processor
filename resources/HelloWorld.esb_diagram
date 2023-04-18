@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_GwC8EN3cEe2R9uOTGf2scg" type="Esb" name="HelloWorld" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_HKqbgN3cEe2R9uOTGf2scg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HKv7EN3cEe2R9uOTGf2scg" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_HY3PkN3cEe2R9uOTGf2scg" type="3668" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:BasicCompartment" xmi:id="_HY3Pkt3cEe2R9uOTGf2scg" type="7044">
+          <children xmi:type="notation:Node" xmi:id="_HY99QN3cEe2R9uOTGf2scg" type="3669">
+            <children xmi:type="notation:Node" xmi:id="_HY_ycN3cEe2R9uOTGf2scg" type="3670">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_HY_ycd3cEe2R9uOTGf2scg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_HY_yct3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_HY_yc93cEe2R9uOTGf2scg"/>
+              <element xmi:type="esb:APIResourceInputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@inputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HY_ydN3cEe2R9uOTGf2scg" x="86" y="-11"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HY_ydd3cEe2R9uOTGf2scg" type="3671">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_HY_ydt3cEe2R9uOTGf2scg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_HY_yd93cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_HY_yeN3cEe2R9uOTGf2scg"/>
+              <element xmi:type="esb:APIResourceOutputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@outputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HY_yed3cEe2R9uOTGf2scg" x="86" y="-23"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HZAZgN3cEe2R9uOTGf2scg" type="3730">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZAZgd3cEe2R9uOTGf2scg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_HZAZgt3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_HZAZg93cEe2R9uOTGf2scg"/>
+              <element xmi:type="esb:APIResourceOutSequenceOutputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@outSequenceOutputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZAZhN3cEe2R9uOTGf2scg" x="110" y="-11"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HZAZhd3cEe2R9uOTGf2scg" type="3672">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZAZht3cEe2R9uOTGf2scg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_HZAZh93cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_HZAZiN3cEe2R9uOTGf2scg"/>
+              <element xmi:type="esb:APIResourceFaultInputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@faultInputConnector"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZAZid3cEe2R9uOTGf2scg" x="86" y="7"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HZAZit3cEe2R9uOTGf2scg" type="3673">
+              <children xmi:type="notation:Node" xmi:id="_HZBnoN3cEe2R9uOTGf2scg" type="3487">
+                <children xmi:type="notation:Node" xmi:id="_HZCOsN3cEe2R9uOTGf2scg" type="3608">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_HZCOtd3cEe2R9uOTGf2scg" type="7034">
+                    <children xmi:type="notation:Node" xmi:id="_HZN04N3cEe2R9uOTGf2scg" type="3597">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_HZN05d3cEe2R9uOTGf2scg" type="5191"/>
+                      <children xmi:type="notation:Node" xmi:id="_HZW-0N3cEe2R9uOTGf2scg" type="3598">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZW-0d3cEe2R9uOTGf2scg"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_HZW-0t3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_HZW-093cEe2R9uOTGf2scg"/>
+                        <element xmi:type="esb:PayloadFactoryMediatorInputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZW-1N3cEe2R9uOTGf2scg" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_HZW-1d3cEe2R9uOTGf2scg" type="3599">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZW-1t3cEe2R9uOTGf2scg"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_HZW-193cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_HZW-2N3cEe2R9uOTGf2scg"/>
+                        <element xmi:type="esb:PayloadFactoryMediatorOutputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZW-2d3cEe2R9uOTGf2scg" x="64" y="-9"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZN04d3cEe2R9uOTGf2scg"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_HZN04t3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_HZN0493cEe2R9uOTGf2scg"/>
+                      <element xmi:type="esb:PayloadFactoryMediator" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZN05N3cEe2R9uOTGf2scg" x="25" y="38" width="84" height="115"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_HZm2cN3cEe2R9uOTGf2scg" type="3739">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_HZm2dd3cEe2R9uOTGf2scg" type="5209"/>
+                      <children xmi:type="notation:Node" xmi:id="_HZrH4N3cEe2R9uOTGf2scg" type="3740">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZrH4d3cEe2R9uOTGf2scg"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_HZrH4t3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_HZrH493cEe2R9uOTGf2scg"/>
+                        <element xmi:type="esb:RespondMediatorInputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZrH5N3cEe2R9uOTGf2scg" x="-6" y="-5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_HZrH5d3cEe2R9uOTGf2scg" type="3741">
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZrH5t3cEe2R9uOTGf2scg"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_HZrH593cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_HZrH6N3cEe2R9uOTGf2scg"/>
+                        <element xmi:type="esb:RespondMediatorOutputConnector" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZrH6d3cEe2R9uOTGf2scg" x="64" y="-9"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZm2cd3cEe2R9uOTGf2scg"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_HZm2ct3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_HZm2c93cEe2R9uOTGf2scg"/>
+                      <element xmi:type="esb:RespondMediator" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZm2dN3cEe2R9uOTGf2scg" x="149" y="38" width="84" height="115"/>
+                    </children>
+                    <styles xmi:type="notation:TitleStyle" xmi:id="_HZCOtt3cEe2R9uOTGf2scg" showTitle="true"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZCOsd3cEe2R9uOTGf2scg"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_HZCOst3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_HZCOs93cEe2R9uOTGf2scg"/>
+                  <element xmi:type="esb:MediatorFlow" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZCOtN3cEe2R9uOTGf2scg"/>
+                </children>
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZBnod3cEe2R9uOTGf2scg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_HZBnot3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_HZBno93cEe2R9uOTGf2scg"/>
+                <element xmi:type="esb:ProxyServiceSequenceAndEndpointContainer" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZBnpN3cEe2R9uOTGf2scg"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_HZBnpd3cEe2R9uOTGf2scg" type="3488">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZBnpt3cEe2R9uOTGf2scg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_HZBnp93cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_HZBnqN3cEe2R9uOTGf2scg"/>
+                <element xmi:type="esb:ProxyServiceFaultContainer" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@faultContainer"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZBnqd3cEe2R9uOTGf2scg"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_HZAZi93cEe2R9uOTGf2scg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_HZAZjN3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_HZAZjd3cEe2R9uOTGf2scg"/>
+              <element xmi:type="esb:ProxyServiceContainer" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZAZjt3cEe2R9uOTGf2scg"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_HY99Qd3cEe2R9uOTGf2scg"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_HY99Qt3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_HY99Q93cEe2R9uOTGf2scg"/>
+            <element xmi:type="esb:APIResource" href="HelloWorld.esb#//@server/@children.0/@resources.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HY99RN3cEe2R9uOTGf2scg" width="300" height="400"/>
+          </children>
+        </children>
+        <element xmi:type="esb:SynapseAPI" href="HelloWorld.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HY3Pkd3cEe2R9uOTGf2scg" width="640" height="500"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_HKqbgd3cEe2R9uOTGf2scg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HKqbgt3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_HKqbg93cEe2R9uOTGf2scg"/>
+    <element xmi:type="esb:EsbServer" href="HelloWorld.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HKqbhN3cEe2R9uOTGf2scg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_GwC8Ed3cEe2R9uOTGf2scg"/>
+  <element xmi:type="esb:EsbDiagram" href="HelloWorld.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Ha4o0N3cEe2R9uOTGf2scg" type="4001" source="_HY_ydd3cEe2R9uOTGf2scg" target="_HZW-0N3cEe2R9uOTGf2scg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_Ha4o0d3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="HelloWorld.esb#//@server/@children.0/@resources.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ha4o0t3cEe2R9uOTGf2scg" points="[6, 5, -5, 0]$[5, 0, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_HbDA4N3cEe2R9uOTGf2scg" type="4001" source="_HZW-1d3cEe2R9uOTGf2scg" target="_HZrH4N3cEe2R9uOTGf2scg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_HbDA4d3cEe2R9uOTGf2scg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="esb:EsbLink" href="HelloWorld.esb#//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HbDA4t3cEe2R9uOTGf2scg" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+</notation:Diagram>
