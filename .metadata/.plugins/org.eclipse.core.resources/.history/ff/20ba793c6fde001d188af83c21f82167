@@ -16,7 +16,6 @@
             </http>
         </endpoint>
     </call>
-    <property expression="json-eval($)" name="body" scope="default" type="STRING"/>
     <log level="full"/>
     <amazonsqs.sendMessage configKey="AMAZON_SQS_CONNECTION_1">
         <queueId>494315182757</queueId>
