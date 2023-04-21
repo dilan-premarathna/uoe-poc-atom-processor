@@ -1,0 +1,18 @@
+
+<data disableLegacyBoxcarringMode="false" enableBatchRequests="false" enableBoxcarring="false" name="Schedule_State_DataService" serviceNamespace="http://ws.wso2.org/dataservice" serviceStatus="active" transports="http https">
+    <description>Data service for Schedule State</description>
+    <config id="default">
+        <property name="carbon_datasource_name">MySQLConnection</property>
+    </config>
+    <query id="insert_schedul_state_query" useConfig="default">
+        <sql>INSERT INTO schedul_state (date, success) VALUES (?, ?)</sql>
+        <param name="date" ordinal="1" paramType="SCALAR" sqlType="STRING" type="IN"/>
+        <param name="success" ordinal="2" paramType="SCALAR" sqlType="STRING" type="IN"/>
+    </query>
+    <resource method="POST" path="schedul_state">
+        <call-query href="insert_schedul_state_query">
+            <with-param name="date" query-param="date"/>
+            <with-param name="success" query-param="success"/>
+        </call-query>
+    </resource>
+</data>

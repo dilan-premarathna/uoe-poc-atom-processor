@@ -17,4 +17,7 @@
     <artifact name="DB_Entry_Sequence" groupId="wso2.sampleHelloWorld.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/DB_Entry_Sequence.xml</file>
     </artifact>
+    <artifact name="DataService_Endpoint" groupId="wso2.sampleHelloWorld.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DataService_Endpoint.xml</file>
+    </artifact>
 </artifacts>

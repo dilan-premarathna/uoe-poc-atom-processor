@@ -11,6 +11,7 @@
   <modules>
     <module>connector-exportor</module>
     <module>atom-processor-datasource</module>
+    <module>atom-processor-dataservice</module>
     <module>atom-processorConfigs</module>
     <module>atom-processorCAPP</module>
   </modules>

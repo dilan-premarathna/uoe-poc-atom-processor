@@ -15,8 +15,10 @@
   <description>atom-processorCAPP</description>
   <properties>
     <com.example.datasource_._datasource>capp/DataServicesServer</com.example.datasource_._datasource>
+    <com.example.dataservice_._Schedule_State_DataService>capp/DataServicesServer</com.example.dataservice_._Schedule_State_DataService>
     <wso2.sampleHelloWorld.endpoint_._Choreo_Token_Endpoint>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.endpoint_._Choreo_Token_Endpoint>
     <wso2.sampleHelloWorld.local-entry_._AMAZON_SQS_CONNECTION_1>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.local-entry_._AMAZON_SQS_CONNECTION_1>
+    <wso2.sampleHelloWorld.endpoint_._DataService_Endpoint>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.endpoint_._DataService_Endpoint>
     <wso2.sampleHelloWorld.task_._atom-polling-schedule>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.task_._atom-polling-schedule>
     <wso2.sampleHelloWorld.sequence_._DB_Entry_Sequence>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._DB_Entry_Sequence>
     <com.example.lib_._amazonsqs-connector>capp/EnterpriseServiceBus</com.example.lib_._amazonsqs-connector>
@@ -32,8 +34,26 @@
       <type>zip</type>
     </dependency>
     <dependency>
+      <groupId>com.example.datasource</groupId>
+      <artifactId>datasource</artifactId>
+      <version>5.2.42</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.dataservice</groupId>
+      <artifactId>Schedule_State_DataService</artifactId>
+      <version>1.0.0</version>
+      <type>dbs</type>
+    </dependency>
+    <dependency>
       <groupId>wso2.sampleHelloWorld.endpoint</groupId>
       <artifactId>Choreo_Token_Endpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>wso2.sampleHelloWorld.endpoint</groupId>
+      <artifactId>DataService_Endpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -65,12 +85,6 @@
       <groupId>wso2.sampleHelloWorld.task</groupId>
       <artifactId>atom-polling-schedule</artifactId>
       <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.datasource</groupId>
-      <artifactId>datasource</artifactId>
-      <version>5.2.42</version>
       <type>xml</type>
     </dependency>
   </dependencies>
