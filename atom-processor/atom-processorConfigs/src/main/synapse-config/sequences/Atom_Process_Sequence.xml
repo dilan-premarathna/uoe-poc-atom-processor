@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sequence name="Atom_Process_Sequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="Atom_Process_Sequence" value="start message processing"/>
+    </log>
     <sequence key="Choreo_Atom_GetAccessToken_Sequenc"/>
     <call>
         <endpoint>
@@ -18,10 +21,6 @@
     <property expression="json-eval($)" name="body" scope="default" type="STRING"/>
     <log level="full"/>
     <sequence key="DB_Entry_Sequence"/>
-    <log level="custom">
-        <property name="Choreo_Atom_GetAccessToken_Sequenc" value="before sqs"/>
-    </log>
-    <log level="full"/>
     <amazonsqs.sendMessage configKey="AMAZON_SQS_CONNECTION_1">
         <queueId>494315182757</queueId>
         <queueName>ChoreoTestSQS</queueName>

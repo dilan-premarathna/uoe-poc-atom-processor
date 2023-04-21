@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sequence name="Choreo_Atom_GetAccessToken_Sequenc" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
-    <property name="atom.app.clientId" scope="default" type="STRING" value="93RGyQx0oKfF_lMC868igFPfBXca"/>
-    <property name="atom.app.clientSecret" scope="default" type="STRING" value="b2DZFQgVFB8Bz8GAL76dnqE82_8a"/>
+    <property expression="get-property('env','ATOM_API_CLIENTID')" name="atom.app.clientId" scope="default" type="STRING"/>
+    <property expression="get-property('env','ATOM_API_API_SECRET')" name="atom.app.clientSecret" scope="default" type="STRING"/>
     <property expression="fn:concat($ctx:atom.app.clientId,':', $ctx:atom.app.clientSecret)" name="clientCred" scope="default" type="STRING"/>
     <property expression="base64Encode(get-property('clientCred'))" name="app-client-auth" scope="default" type="STRING"/>
+    <log level="custom">
+        <property name="Choreo_Atom_GetAccessToken_Sequenc " value="Obtaining Access Token"/>
+    </log>
     <payloadFactory media-type="xml">
         <format>
             <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
@@ -24,9 +27,6 @@
     <call>
         <endpoint key="Choreo_Token_Endpoint"/>
     </call>
-    <log level="full">
-        <property name="Inside " value="Choreo_Atom_GetAccessToken_Sequenc"/>
-    </log>
     <!-- Setting the new access token to the property. -->
     <property expression="json-eval($.access_token)" name="atom.app.accessToken" scope="default" type="STRING"/>
     <header expression="fn:concat('Bearer ', $ctx:atom.app.accessToken)" name="Authorization" scope="transport"/>
