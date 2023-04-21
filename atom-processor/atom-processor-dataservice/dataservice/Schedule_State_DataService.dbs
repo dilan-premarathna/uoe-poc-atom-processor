@@ -1,8 +1,13 @@
 
 <data disableLegacyBoxcarringMode="false" enableBatchRequests="false" enableBoxcarring="false" name="Schedule_State_DataService" serviceNamespace="http://ws.wso2.org/dataservice" serviceStatus="active" transports="http https">
     <description>Data service for Schedule State</description>
-    <config id="default">
+    <config id="MySQLConnection">
         <property name="carbon_datasource_name">MySQLConnection</property>
+        
+        <property name="org.wso2.ws.dataservice.user">$SYSTEM:DB_USER</property>
+        <property name="org.wso2.ws.dataservice.password">$SYSTEM:DB_PASSWORD</property>
+        <property name="org.wso2.ws.dataservice.protocol">$SYSTEM:DB_URL</property>
+        <property name="org.wso2.ws.dataservice.driver">com.mysql.jdbc.Driver</property>
     </config>
     <query id="insert_schedul_state_query" useConfig="default">
         <sql>INSERT INTO schedul_state (date, success) VALUES (?, ?)</sql>
