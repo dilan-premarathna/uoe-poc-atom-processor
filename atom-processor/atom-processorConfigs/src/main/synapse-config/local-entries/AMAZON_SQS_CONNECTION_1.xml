@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <localEntry key="AMAZON_SQS_CONNECTION_1" xmlns="http://ws.apache.org/ns/synapse">
     <amazonsqs.init>
-        <accessKeyId>$SYSTEM:SQS_ACCESSKEY</accessKeyId>
+        <accessKeyId>{get-property('env','SQS_ACCESSKEY')}</accessKeyId>
         <connectionType>amazonsqs</connectionType>
         <version>2009-02-01</version>
-        <secretAccessKey>$SYSTEM:SQS_SECRETKEY</secretAccessKey>
+        <secretAccessKey>{get-property('env','SQS_SECRETKEY')}</secretAccessKey>
         <enableSSL>true</enableSSL>
         <blocking>false</blocking>
         <name>AMAZON_SQS_CONNECTION_1</name>
