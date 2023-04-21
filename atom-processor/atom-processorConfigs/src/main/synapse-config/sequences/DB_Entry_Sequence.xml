@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="DB_Entry_Sequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="get-property('SYSTEM_DATE', 'yyyy-MM-dd HH:mm:ss')" name="CURRENT_TIME" scope="default" type="STRING"/>
+    <dbreport>
+        <connection>
+            <pool>
+                <dsName>jdbc/MySQLDB</dsName>
+            </pool>
+        </connection>
+        <statement>
+            <sql><![CDATA[INSERT INTO schedul_state (date, success) VALUES (?, ?)]]></sql>
+            <parameter expression="$ctx:CURRENT_TIME" type="VARCHAR"/>
+            <parameter type="VARCHAR" value="Success"/>
+        </statement>
+    </dbreport>
+</sequence>

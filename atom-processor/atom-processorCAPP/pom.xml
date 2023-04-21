@@ -14,9 +14,11 @@
   <name>atom-processorCAPP</name>
   <description>atom-processorCAPP</description>
   <properties>
+    <com.example.datasource_._datasource>capp/DataServicesServer</com.example.datasource_._datasource>
     <wso2.sampleHelloWorld.endpoint_._Choreo_Token_Endpoint>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.endpoint_._Choreo_Token_Endpoint>
     <wso2.sampleHelloWorld.local-entry_._AMAZON_SQS_CONNECTION_1>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.local-entry_._AMAZON_SQS_CONNECTION_1>
     <wso2.sampleHelloWorld.task_._atom-polling-schedule>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.task_._atom-polling-schedule>
+    <wso2.sampleHelloWorld.sequence_._DB_Entry_Sequence>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._DB_Entry_Sequence>
     <com.example.lib_._amazonsqs-connector>capp/EnterpriseServiceBus</com.example.lib_._amazonsqs-connector>
     <wso2.sampleHelloWorld.sequence_._Atom_Process_Sequence>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._Atom_Process_Sequence>
     <wso2.sampleHelloWorld.sequence_._Choreo_Atom_GetAccessToken_Sequenc>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._Choreo_Atom_GetAccessToken_Sequenc>
@@ -54,9 +56,21 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>wso2.sampleHelloWorld.sequence</groupId>
+      <artifactId>DB_Entry_Sequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>wso2.sampleHelloWorld.task</groupId>
       <artifactId>atom-polling-schedule</artifactId>
       <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.datasource</groupId>
+      <artifactId>datasource</artifactId>
+      <version>5.2.42</version>
       <type>xml</type>
     </dependency>
   </dependencies>

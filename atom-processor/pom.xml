@@ -10,6 +10,7 @@
   <description>atom-processor</description>
   <modules>
     <module>connector-exportor</module>
+    <module>datasource-config</module>
     <module>atom-processorConfigs</module>
     <module>atom-processorCAPP</module>
   </modules>

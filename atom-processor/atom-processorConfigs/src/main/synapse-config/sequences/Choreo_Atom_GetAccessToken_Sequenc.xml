@@ -16,10 +16,6 @@
         </format>
         <args/>
     </payloadFactory>
-    <log level="custom">
-        <property expression="get-property('app-client-auth')" name="app-client-auth"/>
-        <property name="AccountPayoutNetwork_GetAccessTokenHNB_Sequence" value="get access token"/>
-    </log>
     <header expression="fn:concat('Basic ', get-property('app-client-auth'))" name="Authorization" scope="transport"/>
     <header name="Content-Type" scope="transport" value="application/x-www-form-urlencoded"/>
     <property description="messageType" name="messageType" scope="axis2" type="STRING" value="application/x-www-form-urlencoded"/>
@@ -29,7 +25,7 @@
         <endpoint key="Choreo_Token_Endpoint"/>
     </call>
     <log level="full">
-        <property name="Inside " value="AccountPayoutNetwork_GetAccessTokenHNB_Sequence after endpoint"/>
+        <property name="Inside " value="Choreo_Atom_GetAccessToken_Sequenc"/>
     </log>
     <!-- Setting the new access token to the property. -->
     <property expression="json-eval($.access_token)" name="atom.app.accessToken" scope="default" type="STRING"/>

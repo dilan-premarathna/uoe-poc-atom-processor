@@ -14,4 +14,7 @@
     <artifact name="Atom_Process_Sequence" groupId="wso2.sampleHelloWorld.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/Atom_Process_Sequence.xml</file>
     </artifact>
+    <artifact name="DB_Entry_Sequence" groupId="wso2.sampleHelloWorld.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/DB_Entry_Sequence.xml</file>
+    </artifact>
 </artifacts>
