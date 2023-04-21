@@ -16,6 +16,5 @@
     <property name="url">$SYSTEM:DB_URL</property>
     <property name="username">$SYSTEM:DB_USER</property>
     <property name="password">$SYSTEM:DB_PASSWORD</property>
-    <property name="dynamicUserAuthClass">com.mysql.jdbc.Driver</property>
   </config>
 </data>
