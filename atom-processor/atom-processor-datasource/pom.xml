@@ -8,11 +8,11 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <groupId>com.example</groupId>
-  <artifactId>datasource-config</artifactId>
+  <artifactId>atom-processor-datasource</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>datasource-config</name>
-  <description>datasource-config</description>
+  <name>atom-processor-datasource</name>
+  <description>atom-processor-datasource</description>
   <properties>
     <maven.test.skip>false</maven.test.skip>
     <CApp.type>bpel/workflow=zip,lib/registry/filter=jar,webapp/jaxws=war,lib/library/bundle=jar,service/dataservice=dbs,datasource/datasource=xml,synapse/local-entry=xml,synapse/proxy-service=xml,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,lib/carbon/ui=jar,service/axis2=aar,synapse/sequence=xml,synapse/configuration=xml,wso2/gadget=dar,lib/registry/handlers=jar,lib/synapse/mediator=jar,synapse/task=xml,synapse/api=xml,synapse/template=xml,synapse/message-store=xml,synapse/message-processors=xml,synapse/inbound-endpoint=xml</CApp.type>
