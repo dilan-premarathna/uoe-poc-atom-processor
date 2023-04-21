@@ -7,7 +7,7 @@
   <definition type="RDBMS">
     <configuration>
       <driverClassName>com.mysql.jdbc.Driver</driverClassName>
-      <url>jdbc:mysql://choreo-db-test.cwsi3tu3k55f.ap-southeast-2.rds.amazonaws.com:3306/choreo_db?useSSL=true&amp;requireSSL=true&amp;clientCertificateKeyStoreUrl=file:/Users/shanakap/Documents/products/wso2mi-4.1.0/repository/resources/security/client-truststore.jks&amp;clientCertificateKeyStorePassword=wso2carbon</url>
+      <url>jdbc:mysql://choreo-db-test.cwsi3tu3k55f.ap-southeast-2.rds.amazonaws.com:3306/choreo_db?useSSL=false</url>
       <username>$SYSTEM:DB_USER</username>
       <password>$SYSTEM:DB_PASSWORD</password>
     </configuration>
