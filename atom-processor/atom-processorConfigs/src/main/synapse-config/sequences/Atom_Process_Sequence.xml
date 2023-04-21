@@ -18,7 +18,21 @@
     <property expression="json-eval($)" name="body" scope="default" type="STRING"/>
     <log level="full"/>
     <sequence key="DB_Entry_Sequence"/>
-    <amazonsqs.sendMessage configKey="AMAZON_SQS_CONNECTION_1">
+    <log level="custom">
+        <property name="Choreo_Atom_GetAccessToken_Sequenc" value="before sqs"/>
+    </log>
+    <log level="full"/>
+    <amazonsqs.init>
+        <accessKeyId>get-property('env', 'SQS_ACCESSKEY')</accessKeyId>
+        <connectionType>amazonsqs</connectionType>
+        <version>2009-02-01</version>
+        <secretAccessKey>get-property('env', 'SQS_SECRETKEY')</secretAccessKey>
+        <enableSSL>true</enableSSL>
+        <blocking>false</blocking>
+        <name>AMAZON_SQS_CONNECTION_1</name>
+        <region>ap-southeast-2</region>
+    </amazonsqs.init>
+    <amazonsqs.sendMessage >
         <queueId>494315182757</queueId>
         <queueName>ChoreoTestSQS</queueName>
         <messageBody>{get-property('body')}</messageBody>
