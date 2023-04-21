@@ -5,7 +5,7 @@
     </log>
     <sequence key="Choreo_Atom_GetAccessToken_Sequenc"/>
     <call>
-        <endpoint key="ATOM_API_EP"/>
+        <endpoint key="Atom_API_Endpoint"/>
     </call>
     <property expression="json-eval($)" name="body" scope="default" type="STRING"/>
     <log level="full"/>

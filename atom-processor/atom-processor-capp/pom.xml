@@ -21,6 +21,7 @@
     <wso2.sampleHelloWorld.task_._atom-polling-schedule>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.task_._atom-polling-schedule>
     <wso2.sampleHelloWorld.sequence_._DB_Entry_Sequence>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._DB_Entry_Sequence>
     <com.example.lib_._amazonsqs-connector>capp/EnterpriseServiceBus</com.example.lib_._amazonsqs-connector>
+    <wso2.sampleHelloWorld.endpoint_._Atom_API_Endpoint>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.endpoint_._Atom_API_Endpoint>
     <wso2.sampleHelloWorld.sequence_._Atom_Process_Sequence>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._Atom_Process_Sequence>
     <wso2.sampleHelloWorld.sequence_._Choreo_Atom_GetAccessToken_Sequenc>capp/EnterpriseServiceBus</wso2.sampleHelloWorld.sequence_._Choreo_Atom_GetAccessToken_Sequenc>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
@@ -33,14 +34,20 @@
       <type>dbs</type>
     </dependency>
     <dependency>
+      <groupId>com.example.lib</groupId>
+      <artifactId>amazonsqs-connector</artifactId>
+      <version>1.1.1</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
       <groupId>wso2.sampleHelloWorld.endpoint</groupId>
-      <artifactId>Choreo_Token_Endpoint</artifactId>
+      <artifactId>Atom_API_Endpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>wso2.sampleHelloWorld.local-entry</groupId>
-      <artifactId>AMAZON_SQS_CONNECTION_1</artifactId>
+      <groupId>wso2.sampleHelloWorld.endpoint</groupId>
+      <artifactId>Choreo_Token_Endpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -51,22 +58,10 @@
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>wso2.sampleHelloWorld.task</groupId>
-      <artifactId>atom-polling-schedule</artifactId>
+      <groupId>wso2.sampleHelloWorld.local-entry</groupId>
+      <artifactId>AMAZON_SQS_CONNECTION_1</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>wso2.sampleHelloWorld.sequence</groupId>
-      <artifactId>DB_Entry_Sequence</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.lib</groupId>
-      <artifactId>amazonsqs-connector</artifactId>
-      <version>1.1.1</version>
-      <type>zip</type>
     </dependency>
     <dependency>
       <groupId>wso2.sampleHelloWorld.sequence</groupId>
@@ -77,6 +72,18 @@
     <dependency>
       <groupId>wso2.sampleHelloWorld.sequence</groupId>
       <artifactId>Choreo_Atom_GetAccessToken_Sequenc</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>wso2.sampleHelloWorld.sequence</groupId>
+      <artifactId>DB_Entry_Sequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>wso2.sampleHelloWorld.task</groupId>
+      <artifactId>atom-polling-schedule</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
