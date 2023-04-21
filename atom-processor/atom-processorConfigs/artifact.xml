@@ -20,4 +20,7 @@
     <artifact name="DataService_Endpoint" groupId="wso2.sampleHelloWorld.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/DataService_Endpoint.xml</file>
     </artifact>
+    <artifact name="Atom_API_Endpoint" groupId="wso2.sampleHelloWorld.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/Atom_API_Endpoint.xml</file>
+    </artifact>
 </artifacts>
