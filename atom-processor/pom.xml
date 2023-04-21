@@ -9,10 +9,10 @@
   <name>atom-processor</name>
   <description>atom-processor</description>
   <modules>
-    <module>connector-exportor</module>
     <module>atom-processor-dataservice</module>
     <module>atom-processorConfigs</module>
-    <module>atom-processorCAPP</module>
+    <module>connector-exportor</module>
+    <module>atom-processor-capp</module>
   </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
