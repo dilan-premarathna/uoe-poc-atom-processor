@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<task class="org.apache.synapse.startup.tasks.MessageInjector" group="synapse.simple.quartz" name="atom-polling-schedule" xmlns="http://ws.apache.org/ns/synapse">
-    <trigger interval="30"/>
-    <property name="injectTo" value="sequence" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
-    <property name="message" xmlns:task="http://www.wso2.org/products/wso2commons/tasks">
-        <m0:getQuote xmlns:m0="http://services.samples"/>
-    </property>
-    <property name="sequenceName" value="SampleSequence" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
-</task>
