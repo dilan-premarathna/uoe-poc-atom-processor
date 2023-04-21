@@ -16,7 +16,9 @@
         </endpoint>
     </call>
     <property expression="json-eval($)" name="body" scope="default" type="STRING"/>
-    <log level="full"/>
+    <log level="full">
+        <property expression="get-property('env',WSO2_SERVER_HOME)" name="WSO2_SERVER_HOME)"/>
+    </log>
     <sequence key="DB_Entry_Sequence"/>
     <amazonsqs.sendMessage configKey="AMAZON_SQS_CONNECTION_1">
         <queueId>494315182757</queueId>
