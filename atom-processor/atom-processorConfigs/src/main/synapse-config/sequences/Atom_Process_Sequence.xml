@@ -11,7 +11,7 @@
     <log level="full"/>
     <sequence key="DB_Entry_Sequence"/>
     <amazonsqs.sendMessage configKey="AMAZON_SQS_CONNECTION_1">
-        <queueId>get-property('env','SQS_QUEUE_ID')}</queueId>
+        <queueId>{get-property('env','SQS_QUEUE_ID')}</queueId>
         <queueName>{get-property('env','SQS_QUEUE_NAME')}</queueName>
         <messageBody>{get-property('body')}</messageBody>
     </amazonsqs.sendMessage>
